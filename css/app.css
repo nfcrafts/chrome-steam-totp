@@ -6,7 +6,9 @@ body {
   color: white;
   width: 200px;
   height: 150px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0; }
 
 .steam-code {
   text-align: center;
@@ -36,13 +38,13 @@ body {
 .settings-box {
   color: white;
   font-size: 14px;
-  width: 100%;
+  width: 200px;
   position: absolute;
   bottom: 0;
   right: 0;
   height: 36px;
   background: rgba(103, 221, 240, 0);
-  transform: translateX(180px);
+  transform: translateX(164px);
   transition: opacity .3s, transform .3s, background .3s;
   opacity: 1; }
   .settings-box.hidden {
@@ -71,6 +73,6 @@ body {
     line-height: 14px;
     margin: 0;
     padding: 0;
-    width: 138px;
+    width: 120px;
     background: transparent;
     color: white; }
