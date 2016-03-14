@@ -1,0 +1,76 @@
+.hidden {
+  display: none; }
+
+body {
+  background: #2a3f5a;
+  color: white;
+  width: 200px;
+  height: 150px;
+  overflow-x: hidden; }
+
+.steam-code {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%); }
+  .steam-code .code {
+    font-size: 36px;
+    letter-spacing: 3px;
+    text-align: center; }
+
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px; }
+  .progress .progress-bar {
+    margin: 0 auto;
+    width: 50%;
+    background: #67DDF0;
+    height: 4px;
+    transition: width .3s; }
+
+.settings-box {
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 36px;
+  background: rgba(103, 221, 240, 0);
+  transform: translateX(180px);
+  transition: opacity .3s, transform .3s, background .3s;
+  opacity: 1; }
+  .settings-box.hidden {
+    opacity: 0; }
+  .settings-box.open {
+    background: rgba(103, 221, 240, 0.1);
+    transform: translateX(0); }
+  .settings-box div {
+    display: inline-block; }
+  .settings-box .icon {
+    width: 36px;
+    height: 36px;
+    padding-top: 10px;
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+    opacity: .7;
+    cursor: pointer; }
+    .settings-box .icon:hover {
+      opacity: 1; }
+  .settings-box .secret {
+    border: 0;
+    outline: 0;
+    height: 36px;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0;
+    padding: 0;
+    width: 128px;
+    background: transparent;
+    color: white; }
