@@ -1,5 +1,6 @@
-if localStorage.getItem('secret')
-	$('.steam-code, .progress').removeClass 'opacity-0'
+if localStorage.getItem('secret').length > 3
+	$('.steam-code').removeClass 'opacity-0'
+	$('.progress').removeClass 'opacity-0'
 	changeCode = ->
 		time = (new Date).getSeconds()
 		if time > 30

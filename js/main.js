@@ -1,7 +1,9 @@
 (function() {
   var changeCode;
 
-  if (localStorage.getItem('secret')) {
+  if (localStorage.getItem('secret').length > 3) {
+    $('.steam-code').removeClass('opacity-0');
+    $('.progress').removeClass('opacity-0');
     changeCode = function() {
       var time, width;
       time = (new Date).getSeconds();

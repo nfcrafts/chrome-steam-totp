@@ -1,6 +1,9 @@
 .hidden {
   display: none; }
 
+.opacity-0 {
+  opacity: 0 !important; }
+
 body {
   background: #2a3f5a;
   color: white;
@@ -16,7 +19,9 @@ body {
   left: 0;
   top: 50%;
   width: 100%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: opacity .3s; }
   .steam-code .code {
     font-size: 36px;
     letter-spacing: 3px;
@@ -27,7 +32,9 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 4px; }
+  height: 4px;
+  opacity: 1;
+  transition: opacity .3s; }
   .progress .progress-bar {
     margin: 0 auto;
     width: 50%;
