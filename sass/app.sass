@@ -1,5 +1,7 @@
 .hidden
 	display: none
+.opacity-0
+	opacity: 0
 body
 	background: #2a3f5a
 	color: white
@@ -15,6 +17,8 @@ body
 	top: 50%
 	width: 100%
 	transform: translateY(-50%)
+	opacity: 1
+	transition: opacity .3s
 	.code
 		font-size: 36px
 		letter-spacing: 3px
@@ -25,6 +29,8 @@ body
 	left: 0
 	width: 100%
 	height: 4px
+	opacity: 1
+	transition: opacity .3s
 	.progress-bar
 		margin: 0 auto
 		width: 50%
